@@ -1,4 +1,4 @@
-const {getMultiplcation, getPairEqualTo} = require('./adventOfCode.js'); 
+const {getMultiplcation, getPairEqualTo, getTripleEqualToTarget} = require('./adventOfCode.js'); 
 const fs = require('fs')
 
 
@@ -8,7 +8,10 @@ try {
   } catch (err) {
 }
 let dataAsArrayText = data.split(/\r?\n/).map(x => parseInt(x));
-//let dataAsArray = dataAsArrayText.map(x => parseInt(x))
+
 
 let finalPair= getPairEqualTo(dataAsArrayText, 2020);
-console.log(getMultiplcation(finalPair));
+
+let finaltriple= getTripleEqualToTarget(dataAsArrayText, 2020);
+console.log(finaltriple);
+console.log(getMultiplcation(finaltriple));
