@@ -1,4 +1,4 @@
-const {getMultiplcation, getPairEqualTo, getTripleEqualToTarget} = require('../adventOfCode.js'); 
+const {getMultiplcation, getPairEqualTo, getTripleEqualToTarget} = require('../lib/day1.js'); 
 
 describe('First Day Challenge', () => {
   test('The mutiplication of 2 and 3 shoud be equal to 5', () => {
@@ -16,7 +16,6 @@ describe('First Day Challenge', () => {
   test('The sum of tree numbers should be 2020', () => {
     let array = [2009,20, 7,25, 4];
     let result = getTripleEqualToTarget(array,2020);
-    console.log(result);
     expect(result).toEqual([2009,7,4]);
   })
 } )

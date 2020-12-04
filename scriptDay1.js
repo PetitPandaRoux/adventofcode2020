@@ -1,4 +1,4 @@
-const {getMultiplcation, getPairEqualTo, getTripleEqualToTarget} = require('./adventOfCode.js'); 
+const {getMultiplcation, getPairEqualTo, getTripleEqualToTarget} = require('./lib/day1.js'); 
 const fs = require('fs')
 
 
@@ -15,3 +15,4 @@ let finalPair= getPairEqualTo(dataAsArrayText, 2020);
 let finaltriple= getTripleEqualToTarget(dataAsArrayText, 2020);
 console.log(finaltriple);
 console.log(getMultiplcation(finaltriple));
+
