@@ -13,10 +13,10 @@ describe('Second Day Challenge', () => {
     expect(result).toEqual(false);
   });
 
-  test('The password 13-14 q: qrsxtpgpnhcrkq should return false', () => {
+  test('The password 13-14 q: qrsxtpgpnhcrkq should return true', () => {
     let falsePassword = '13-14 q: qrsxtpgpnhcrkq';
     let result = checkValidPassword(falsePassword);
-    expect(result).toEqual(false);
+    expect(result).toEqual(true);
   });
 
 })
