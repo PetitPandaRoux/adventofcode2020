@@ -5,7 +5,10 @@ try {
   var grid = fs.readFileSync('data/input_day3', 'utf8')
   } catch (err) {
 }
-let slope = {right:3, down:1};
+
+let totalTree = 0;
+
+let slope = {right:1, down:2};
 let numberOfThreeEncoutered = 0 ;
 let toboggan = new Tobbogan(grid, slope);
 console.log( toboggan.grid.length);
@@ -17,8 +20,6 @@ while(toboggan.currentPositionX < toboggan.grid.length) {
     //console.log('y:' + toboggan.currentPositionY + ' x:' + toboggan.currentPositionX);
   }
   toboggan.move();
-
-
 }
 
 console.log("total tree:" + numberOfThreeEncoutered);
